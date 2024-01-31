@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/format.css">
+    <title>Starbucks</title>
+
+</head>
+
+<body>
+    <div class="circulo"></div>
+
+    <img src="./images/logo.png" alt="logo" class="logo">
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>It's not just Coffee It's <span>Starbucks</span></h2>
+
+            <p>It takes many hands to craft the perfect cup of coffee – from the farmers who tend to the red-ripe coffee
+                cherries, to the master roasters who coax the best from every bean, and to the barista who serves it
+                with</p>
+
+            
+            <a href="https://starbucks.com.br/"><button class="botao">Welcome</button></a>
+            
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./images/img1.png" alt="copo Starbucks" class="starbucks">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./images/img-pequena1.png" alt="copinho Starbucks" class="cup green">
+        <img src="./images/img-pequena2.png" alt="copinho Starbucks 2" class="cup wellow">
+        <img src="./images/img-pequena3.png" alt="copinho Starbucks 3" class="cup pink">
+    </div>
+</body>
+<script>
+
+    let circulo = document.querySelector(".circulo")
+    let imgcup = document.querySelector(".starbucks")
+    let verde = document.querySelector(".green")
+    let amarelo = document.querySelector(".wellow")
+    let rosa = document.querySelector(".pink")
+
+
+
+    verde.addEventListener("click", () => {
+        imgcup.src = "./images/img1.png"
+        circulo.style.background = "#017143"
+    })
+
+
+    amarelo.addEventListener("click", () => {
+        imgcup.src = "./images/img2.png"
+        circulo.style.background = "#eb7495"
+    })
+
+
+    rosa.addEventListener("click", () => {
+        imgcup.src = "./images/img3.png"
+        circulo.style.background = "#d752b1"
+    })
+
+</script>
+
+</html>
